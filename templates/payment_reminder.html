@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment Reminder</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 20px; }
+        .container { max-width: 600px; margin: auto; border: 1px solid #e0e0e0; border-radius: 8px; padding: 24px; background: #ffffff; }
+        .header { border-bottom: 2px solid #dc3545; padding-bottom: 12px; margin-bottom: 20px; }
+        .header h2 { margin: 0; color: #dc3545; }
+        .details-box { background: #fdf7f7; border-left: 4px solid #dc3545; padding: 16px; margin: 20px 0; }
+        .footer { font-size: 12px; color: #777; margin-top: 24px; border-top: 1px solid #e0e0e0; padding-top: 12px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Payment Due Reminder</h2>
+        </div>
+        <p>Dear {{name}},</p>
+        <p>This is a friendly reminder that an upcoming payment is scheduled for settlement.</p>
+        <div class="details-box">
+            <p><strong>Due Date:</strong> {{date}}</p>
+            <p><strong>Processing Cutoff Time:</strong> {{time}}</p>
+        </div>
+        <p>If you have already processed this transaction, please disregard this notice.</p>
+        <p>Sincerely,<br>Accounts & Finance Department</p>
+        <div class="footer">
+            <p>Automated payment notification. Contact billing support with any queries.</p>
+        </div>
+    </div>
+</body>
+</html>

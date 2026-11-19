@@ -1,0 +1,6 @@
+reminder_id,contact_id,reminder_type,subject,reminder_date,reminder_time,status
+R001,C001,meeting,Sprint Planning Sync,2026-11-20,10:00,pending
+R002,C002,interview,Senior Python Developer Interview,2026-11-21,14:30,pending
+R003,C003,payment,Invoice #INV-2026-089 Due Reminder,2026-11-22,09:00,pending
+R004,C004,webinar,AI in Workflow Automation Webinar,2026-11-23,16:00,pending
+R005,C005,meeting,Quarterly Operations Review,2026-11-24,11:00,pending

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Webinar Reminder</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 20px; }
+        .container { max-width: 600px; margin: auto; border: 1px solid #e0e0e0; border-radius: 8px; padding: 24px; background: #ffffff; }
+        .header { border-bottom: 2px solid #6f42c1; padding-bottom: 12px; margin-bottom: 20px; }
+        .header h2 { margin: 0; color: #6f42c1; }
+        .details-box { background: #fbf9ff; border-left: 4px solid #6f42c1; padding: 16px; margin: 20px 0; }
+        .footer { font-size: 12px; color: #777; margin-top: 24px; border-top: 1px solid #e0e0e0; padding-top: 12px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Webinar Session Reminder</h2>
+        </div>
+        <p>Hello {{name}},</p>
+        <p>We are excited to remind you that your registered webinar session is starting soon!</p>
+        <div class="details-box">
+            <p><strong>Session Date:</strong> {{date}}</p>
+            <p><strong>Start Time:</strong> {{time}}</p>
+        </div>
+        <p>Please use the access link provided in your registration confirmation email to join the room.</p>
+        <p>Warm regards,<br>The Events & Webinar Team</p>
+        <div class="footer">
+            <p>Automated event reminder. Sent via Email Automation & Reminder System.</p>
+        </div>
+    </div>
+</body>
+</html>

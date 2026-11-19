@@ -1,0 +1,6 @@
+contact_id,name,email,department
+C001,Alice Johnson,alice.johnson@example.com,Engineering
+C002,Bob Smith,bob.smith@example.com,Human Resources
+C003,Charlie Davis,charlie.davis@example.com,Finance
+C004,Diana Prince,diana.prince@example.com,Marketing
+C005,Evan Wright,evan.wright@example.com,Operations
