@@ -78,6 +78,37 @@ The system operates strictly in **Simulation Mode** (`EMAIL_MODE=simulation`) by
 
 ---
 
+## 🖼️ Project Screenshots
+
+Visual walk-through of the Email Automation & Reminder System showcasing the real-time Streamlit analytics dashboard, audit tracking, CSV exports, and CLI execution.
+
+### 1. Interactive Dashboard Overview & KPI Metrics
+The primary analytics view provides immediate operational visibility, displaying the system simulation status badge, active timezone (`Asia/Kolkata`), database connectivity health, and seven high-level KPI metric cards tracking total reminders, simulated outputs, failures, and pending queues.
+
+![Dashboard Overview](images/dashboard_overview.png)
+
+### 2. Execution Analytics & Status Distribution
+Visual breakdown of reminder lifecycle states and operational throughput. Includes bar charts visualizing current reminder states (`SIMULATED`, `FAILED`, `PENDING`, `PROCESSING`), historical audit event occurrences, and chronological processing activity over time.
+
+![Analytics Charts](images/analytics_charts.png)
+
+### 3. Detailed Processing History & Audit Log
+A comprehensive, searchable audit trail rendered directly from SQLite history logs. Each record captures the unique log ID, target reminder ID, attempt sequence, processing state transition, IST timestamp, simulated `.eml` preview output path, and diagnostic error messages.
+
+![Processing History Table](images/processing_history.png)
+
+### 4. CSV Report Generation & Browser Download
+On-demand report generation interface allowing operators to trigger collision-proof summary and audit history CSV exports into `outputs/reports/` with immediate one-click browser download buttons.
+
+![Report Generation and Download](images/reports_download.png)
+
+### 5. Command-Line Application Summary & Execution
+The terminal CLI interface (`python main.py --report`) provides an aligned ASCII summary of SQLite processing metrics, system state counters, and the most recent audit history events directly within the console.
+
+![CLI Summary Output](images/cli_summary.png)
+
+---
+
 ## 🛠️ Technology Stack
 
 | Layer | Technologies & Libraries |
@@ -249,20 +280,6 @@ To verify persistent duplicate prevention across two independent OS-level Python
 python tests/verify_separate_process.py
 ```
 *Process A claims and simulates a reminder; Process B starts fresh with empty memory and is strictly rejected by SQLite, guaranteeing zero duplicate `.eml` files.*
-
----
-
-## 📸 Screenshots & Visual Tour
-
-The `images/` directory is prepared for documentation visuals:
-
-| Target Visual | File Reference | Description |
-|---|---|---|
-| **Dashboard Overview** | `images/dashboard_overview.png` | 7 KPI cards showing registered, simulated, failed, and pending counts. |
-| **Analytics Visualizations** | `images/analytics_charts.png` | Reminder status distribution bar charts and throughput timeline. |
-| **Audit History Table** | `images/processing_history.png` | Filterable table showing reminder ID, attempt sequence, and timestamps. |
-| **CSV Report Export** | `images/reports_download.png` | On-demand CSV report generation and direct browser download buttons. |
-| **Terminal CLI Execution** | `images/cli_summary.png` | Clean aligned ASCII output from `python main.py --report`. |
 
 ---
 
